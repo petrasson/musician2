@@ -10,6 +10,8 @@
 
 # MAGNIFY SEACH
 
+# BUG Show/hide itmes in nav
+
 #### DONE
 
 # LAYOUT \* PHOTO

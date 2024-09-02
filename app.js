@@ -8,31 +8,30 @@ document.addEventListener("DOMContentLoaded", function () {
   const reviewWrapper = document.querySelector(".review-wrapper");
   const reviewGroups = document.querySelectorAll(".review-group");
   const circles = document.querySelectorAll(".circle");
-  // const formWrapper = document.querySelector(".contact-wrapper");
 
-  let selectedField;
   let currentIndex = 0;
   let timer;
 
   const header = document.querySelector("header");
   const target = document.querySelector(".observer-target");
 
+  /**** Sticky header *****/
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         header.classList.remove("sticky");
-        console.log("yes");
       } else {
         header.classList.add("sticky");
-        console.log("no");
       }
     });
   });
 
   observer.observe(target);
 
-  /****Update reviews *****/
+  /**** Update reviews *****/
 
+  // Function to show a review
   function showReview(index) {
     const reviewWidth = reviewGroups[0].clientWidth;
     reviewWrapper.scrollTo({
@@ -59,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function stopCarousel() {
     clearInterval(timer);
   }
+
   // Unified event handler for navigation clicks
   function handleNavigationClick(event) {
     const index = Array.from(
@@ -83,37 +83,26 @@ document.addEventListener("DOMContentLoaded", function () {
   addEventListeners([...circles, ...reviewGroups]);
 
   /*** Showing/hiding the Hamburger menu on click ***/
+
   hamburgBtn.addEventListener("click", () => {
-    [
-      hamburgBtn,
-      closeBtn,
-      hamburgerMenu,
-      nav,
-      magnifyingGlass,
-      shoppingBag,
-    ].forEach((e) => {
+    [hamburgBtn, closeBtn, hamburgerMenu].forEach((e) => {
       e.classList.add("active");
     });
   });
 
   closeBtn.addEventListener("click", () => {
-    [
-      hamburgBtn,
-      closeBtn,
-      hamburgerMenu,
-      nav,
-      magnifyingGlass,
-      shoppingBag,
-    ].forEach((e) => {
+    [hamburgBtn, closeBtn, hamburgerMenu].forEach((e) => {
       e.classList.remove("active");
     });
   });
+
+  /*** Highlight menu item on click. Show submenu on click ***/
 
   hamburgerMenu.addEventListener("click", function (event) {
     const clickedElement = event.target;
 
     if (clickedElement.tagName === "A") {
-      document.querySelectorAll(".hamburger-menu a").forEach(function (item) {
+      document.querySelectorAll(".hamburger-menu a").forEach((item) => {
         item.classList.remove("highlight-text");
       });
       clickedElement.classList.add("highlight-text");
@@ -123,10 +112,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (submenu) {
         if (!clickedElement.classList.contains("menu-item-sub")) {
-          console.log("yes");
           parentMenuItem.classList.toggle("show-submenu");
         }
-        console.log("no");
         event.stopPropagation();
         event.preventDefault();
       }
