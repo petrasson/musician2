@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe - musician</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/14732e8c57.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="social-wrapper">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <!-- <h1 class="logotype">John Doe</h1> -->
+        <div class="menu-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-bag-shopping"></i>
+          <button class="hamburger-btn" aria-label="Open-nav">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+          <button class="close-btn" aria-label="Close-nav">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="hamburger-menu-wrapper">
+          <ul class="hamburger-menu">
+            <li class="menu-item">
+              <a href="#" class="highlight-text">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="#">Music</a>
+              <ul class="hamburger-menu-sub">
+                <li class="menu-item-sub"><a href="#">Discographic</a></li>
+                <li class="menu-item-sub"><a href="#">Groups</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#">Events</a></li>
+            <li class="menu-item"><a href="#">Videos</a></li>
+            <li class="menu-item">
+              <a href="#">Photos</a>
+              <ul class="hamburger-menu-sub">
+                <li class="menu-item-sub"><a href="#">Gallery</a></li>
+                <li class="menu-item-sub"><a href="#">Press photo</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"><a href="#">News</a></li>
+            <li class="menu-item"><a href="#">Shop</a></li>
+            <li class="menu-item"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="observer-target"></div>
+    <section class="intro">
+      <h1 class="page-title">JOHN DOE</h1>
+      <h2 class="page-sub-title">On tour 2024</h2>
+      <i class="fa-solid fa-angles-down"></i>
+    </section>
+    <main>
+      <section class="section-wrapper" id="music">
+        <div class="inner-wrapper">
+          <div class="title-wrapper">
+            <h2 class="section-title">
+              New Album <span class="highlight-text">Release</span>
+            </h2>
+            <h3 class="section-sub-title">One of a kind</h3>
+          </div>
+          <div class="music-container">
+            <img
+              class="music-image"
+              alt="image of a concert"
+              src="images/consert3.jpg"
+            />
+            <div class="music-wrapper">
+              <div class="track-wrapper">
+                <p class="track-title">1. TackTile</p>
+                <div class="track-bar">
+                  <button id="play-pause">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                  <p class="time-stamp">00:00</p>
+                  <div class="progress-container">
+                    <div id="progress"></div>
+                  </div>
+                  <p class="time-stamp">05:00</p>
+                  <!-- <i class="fa-solid fa-volume-high"></i>
+          <input type="range" id="volume" min="0" max="100" step="1" /> -->
+                </div>
+              </div>
+              <div class="track-wrapper">
+                <p class="track-title">1. TrackTitle</p>
+                <div class="track-bar">
+                  <button id="play-pause">
+                    <i class="fa-solid fa-play"></i>
+                  </button>
+                  <p class="time-stamp">00:00</p>
+                  <div class="progress-container">
+                    <div id="progress"></div>
+                  </div>
+                  <p class="time-stamp">05:00</p>
+                  <!-- <i class="fa-solid fa-volume-high"></i>
+          <input type="range" id="volume" min="0" max="100" step="1" /> -->
+                </div>
+              </div>
+              <p class="section-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Nesciunt, fugiiti et officiis nisi perspiciatis veniam quibusdam
+                ipsa obcaecati cupiditate natus ipsam?
+              </p>
+              <p class="btn left"><a href="#">Buy album from Itunes</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-wrapper" id="events">
+        <div class="inner-wrapper">
+          <div class="title-wrapper">
+            <h2 class="section-title">
+              Upcoming <span class="highlight-text">Shows</span>
+            </h2>
+            <h3 class="section-sub-title">TOUR DATES 2024</h3>
+          </div>
+          <div class="event-wrapper">
+            <p class="section-text">28th of May</p>
+            <p class="section-text">Place</p>
+            <p class="event-title">Paris Music festival</p>
+            <p class="section-text">Tickets</p>
+          </div>
+          <div class="event-wrapper">
+            <p class="section-text">20th of June</p>
+            <p class="section-text">Place</p>
+            <p class="event-title">Toronto Music festival</p>
+            <p class="section-text">Tickets</p>
+          </div>
+          <div class="event-wrapper">
+            <p class="section-text">16th of Dec</p>
+            <p class="section-text">Place</p>
+            <p class="event-title">Primavera Sound Barcelona</p>
+            <p class="section-text">Tickets</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-wrapper" id="photo">
+        <div class="title-wrapper">
+          <h2 class="section-title">Photo</h2>
+          <h3 class="section-sub-title">Gallery</h3>
+        </div>
+        <div class="photo-wrapper">
+          <img class="photos-image" alt="big city" src="images/city.jpg" />
+          <img
+            class="photos-image"
+            alt="akustic guitar in a room"
+            src="images/guitarrs.jpg"
+          />
+          <img
+            class="photos-image"
+            alt="pop concert"
+            src="images/consert1.jpg"
+          />
+          <img
+            class="photos-image"
+            alt="recording microphone"
+            src="images/microphone.jpg"
+          />
+          <img class="photos-image" alt="notebook" src="images/notes.jpg" />
+          <img
+            class="photos-image"
+            alt="piano in studio"
+            src="images/recording.jpg"
+          />
+          <img
+            class="photos-image"
+            alt="neon sign saying you are what you listen to"
+            src="images/sign.jpg"
+          />
+          <img class="photos-image" alt="tape cassette" src="images/tape.jpg" />
+          <img
+            class="photos-image"
+            alt="headphones"
+            src="images/headphones.jpg"
+          />
+        </div>
+        <div class="inner-wrapper">
+          <p class="btn"><a href="#">More photos</a></p>
+        </div>
+      </section>
+      <section class="section-wrapper" id="video">
+        <div class="inner-wrapper">
+          <div class="title-wrapper">
+            <h2 class="section-title">Videos</h2>
+            <h3 class="section-sub-title">Name of video 2024</h3>
+          </div>
+          <div class="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/oWSugQxwpEA?si=BKO6a5IuhuMG-xJw"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section class="section-wrapper" id="news">
+        <div class="inner-wrapper">
+          <div class="title-wrapper">
+            <h2 class="section-title">
+              Latest <span class="highlight-text">News</span>
+            </h2>
+            <h3 class="section-sub-title">Blog</h3>
+          </div>
+          <div class="blog-wrapper">
+            <article class="blog-post" id="blog1">
+              <h2 class="blog-title">Title</h2>
+              <h3 class="blog-sub-title">Date</h3>
+              <p class="section-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Suscipit, maxime iusto iste temporibus quam
+              </p>
+              <p class="btn"><a href="#">Read more</a></p>
+            </article>
+            <article class="blog-post" id="blog2">
+              <h2 class="blog-title">Title</h2>
+              <h3 class="blog-sub-title">Date</h3>
+              <p class="section-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Suscipit, maxime iusto iste temporibus quam
+              </p>
+              <p class="btn"><a href="#">Read more</a></p>
+            </article>
+            <article class="blog-post" id="blog3">
+              <h2 class="blog-title">Title</h2>
+              <h3 class="blog-sub-title">Date</h3>
+              <p class="section-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Suscipit, maxime iusto iste temporibus quam
+              </p>
+              <p class="btn"><a href="#">Read more</a></p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section-wrapper" id="reviews">
+        <div class="inner-wrapper">
+          <div class="title-wrapper">
+            <h2 class="section-title" id="review-title">Reviews</h2>
+          </div>
+          <div class="review-wrapper">
+            <div class="review-group">
+              <q class="review-text"
+                >Explosive energy and raw talent, this musician brings a fresh
+                sound to the rock scene.</q
+              >
+              <p>- The Guardian</p>
+            </div>
+            <div class="review-group">
+              <q class="review-text"
+                >A masterclass in guitar riffs and powerful vocals, setting the
+                stage on fire with every performance.</q
+              >
+              <p>- Rolling Stone</p>
+            </div>
+            <div class="review-group">
+              <q class="review-text"
+                >An electrifying presence with a sound that echoes the legends
+                of rock, truly a star in the making.</q
+              >
+              <p>- The New York Times</p>
+            </div>
+            <div class="review-group">
+              <q class="review-text"
+                >Unleashing a torrent of rock anthems, this artist captivates
+                with a unique blend of passion and precision.</q
+              >
+              <p>- The Washington Post</p>
+            </div>
+          </div>
+          <div class="navigation-wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section-wrapper" id="contact">
+        <div class="inner-wrapper">
+          <div class="title-wrapper">
+            <h2 class="section-title">Contact</h2>
+            <h3 class="section-sub-title">Send me a message!</h3>
+          </div>
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact-wrapper"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="1250fbba-aa5e-4eab-adb0-e09974b5e883"
+            />
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="contact-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="contact-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="contact-input"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="contact-input"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn" id="submit">Send Email</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+  </body>
+</html>
