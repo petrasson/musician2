@@ -10,6 +10,8 @@
 
 # MAGNIFY SEACH
 
+# ACCESABILITY -- COLORS, Tab. ARIA roles,
+
 # BUG Show/hide itmes in nav
 
 #### DONE
@@ -39,3 +41,5 @@
 # TRANSITION \*
 
 # TEXT \*
+
+# OPT IMAGES
