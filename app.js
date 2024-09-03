@@ -101,22 +101,23 @@ document.addEventListener("DOMContentLoaded", function () {
   hamburgerMenu.addEventListener("click", function (event) {
     const clickedElement = event.target;
 
-    if (clickedElement.tagName === "A") {
-      document.querySelectorAll(".hamburger-menu a").forEach((item) => {
-        item.classList.remove("highlight-text");
-      });
-      clickedElement.classList.add("highlight-text");
+    if (clickedElement.tagName !== "A") {
+      return;
+    }
+    document.querySelectorAll(".hamburger-menu a").forEach((item) => {
+      item.classList.remove("highlight-text");
+    });
+    clickedElement.classList.add("highlight-text");
 
-      const parentMenuItem = clickedElement.parentElement;
-      const submenu = parentMenuItem.querySelector(".hamburger-menu-sub");
+    const parentMenuItem = clickedElement.parentElement;
+    const submenu = parentMenuItem.querySelector(".hamburger-menu-sub");
 
-      if (submenu) {
-        if (!clickedElement.classList.contains("menu-item-sub")) {
-          parentMenuItem.classList.toggle("show-submenu");
-        }
-        event.stopPropagation();
-        event.preventDefault();
+    if (submenu) {
+      if (!clickedElement.classList.contains("menu-item-sub")) {
+        parentMenuItem.classList.toggle("show-submenu");
       }
+      event.stopPropagation();
+      event.preventDefault();
     }
   });
 });

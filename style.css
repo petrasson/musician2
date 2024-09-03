@@ -281,6 +281,7 @@ nav {
   font-size: var(--font-size-sub-title);
   text-transform: uppercase;
   padding: var(--space-xs);
+  font-weight: 400;
 }
 
 .section-title,
@@ -388,7 +389,7 @@ nav {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-image: url("images/consert2.jpg");
+  background-image: url("images/consert2-800.jpg");
   background-color: var(--color-bg-primary);
   background-repeat: no-repeat;
   background-position: center;
@@ -729,7 +730,7 @@ button.btn,
 }
 
 .contact-input:hover {
-  background-color: rgb(189 117 214 20%);
+  background-color: rgb(189, 117, 214, 20%);
   transition: background-color 0.4s ease;
 }
 
@@ -744,6 +745,10 @@ button.btn,
   .social-wrapper {
     gap: 26px;
     font-size: larger;
+  }
+
+  .intro {
+    background-image: url("images/consert2-1200.jpg");
   }
 
   .photo-wrapper {
@@ -785,6 +790,9 @@ button.btn,
     font-size: larger;
   }
 
+  .music-container img {
+  }
+
   .fa-twitter,
   .fa-instagram,
   .fa-facebook,
@@ -812,6 +820,7 @@ button.btn,
 
   .intro {
     padding-top: 621px;
+    background-image: url("images/consert2-2000.jpg");
   }
 
   .fa-angles-down {
