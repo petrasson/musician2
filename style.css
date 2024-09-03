@@ -64,7 +64,8 @@ header {
   transition: background-color 0.6s ease;
 }
 
-header.sticky {
+header.sticky,
+header.active {
   background-color: var(--color-bg-header);
 }
 
@@ -105,6 +106,46 @@ nav {
   left: -50%;
 } */
 
+/*** Search ***/
+
+.search-wrapper {
+  display: none;
+  background-color: #161515;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 6;
+}
+
+.search-input-wrapper {
+  padding-top: var(--space-xxxl);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.search-wrapper.active {
+  display: flex;
+}
+
+.search-input {
+  height: 30px;
+  width: 200px;
+  margin-right: var(--space-md);
+}
+
+.close-search-btn {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  color: var(--color-secondary-text);
+  font-size: 22px;
+  transition: 0.4s ease;
+}
 /*** Menu Styles ***/
 
 .hamburger-menu-wrapper {
@@ -340,7 +381,6 @@ nav {
 .fa-instagram,
 .fa-facebook {
   display: none;
-  cursor: pointer;
 }
 
 .fa-magnifying-glass {
@@ -790,14 +830,18 @@ button.btn,
     font-size: larger;
   }
 
-  .music-container img {
-  }
+  /* .music-container img {
+  } */
 
   .fa-twitter,
   .fa-instagram,
   .fa-facebook,
   .fa-bag-shopping {
     display: flex;
+  }
+
+  .search-input {
+    width: 350px;
   }
 
   .hamburger-menu {

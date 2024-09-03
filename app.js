@@ -3,17 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = document.querySelector(".close-btn");
   const hamburgerMenu = document.querySelector(".hamburger-menu-wrapper");
   const magnifyingGlass = document.querySelector(".fa-magnifying-glass");
-  const shoppingBag = document.querySelector(".fa-bag-shopping");
-  const nav = document.querySelector("nav");
+  // const shoppingBag = document.querySelector(".fa-bag-shopping");
   const reviewWrapper = document.querySelector(".review-wrapper");
   const reviewGroups = document.querySelectorAll(".review-group");
   const circles = document.querySelectorAll(".circle");
+  const search = document.querySelector(".search-wrapper");
+  const closeSearchBtn = document.querySelector(".close-search-btn");
+  const header = document.querySelector("header");
+  const target = document.querySelector(".observer-target");
 
   let currentIndex = 0;
   let timer;
-
-  const header = document.querySelector("header");
-  const target = document.querySelector(".observer-target");
 
   /**** Sticky header *****/
 
@@ -119,5 +119,20 @@ document.addEventListener("DOMContentLoaded", function () {
       event.stopPropagation();
       event.preventDefault();
     }
+  });
+
+  /*** Search ***/
+
+  magnifyingGlass.addEventListener("click", () => {
+    search.classList.add("active");
+    header.classList.add("active");
+    console.log("active", search);
+    console.log("magnifyingGlass", magnifyingGlass);
+  });
+
+  closeSearchBtn.addEventListener("click", () => {
+    search.classList.remove("active");
+    header.classList.remove("active");
+    console.log("close");
   });
 });
