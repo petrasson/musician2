@@ -2,44 +2,44 @@
 
 #### TODO
 
-# MENU \* --still some problems with colors and smooth transition
+##### MENU \* --still some problems with colors and smooth transition
 
-# PAGES?
+##### PAGES?
 
-# SPOTIFY \*
+##### SPOTIFY \*
 
-# MAGNIFY SEACH
+##### MAGNIFY SEACH
 
-# ACCESABILITY -- COLORS, Tab. ARIA roles,
+##### ACCESABILITY -- COLORS, Tab. ARIA roles,
 
-# BUG Show/hide itmes in nav
+##### BUG Show/hide itmes in nav
 
 #### DONE
 
-# LAYOUT \* PHOTO
+##### LAYOUT \* PHOTO
 
-# LAYOUT \* VIDEO
+##### LAYOUT \* VIDEO
 
-# LAYOUT \* CONTACT
+##### LAYOUT \* CONTACT
 
-# LAYOUT \* REVIEWS
+##### LAYOUT \* REVIEWS
 
-# SPACE \*
+##### SPACE \*
 
-# HOVER \*
+##### HOVER \*
 
-# MENU \*
+##### MENU \*
 
-# FORM SEND EMAIL from Web3forms
+##### FORM SEND EMAIL from Web3forms
 
-# WEB VERSION TEXT/SPACE\* CLAMP
+##### WEB VERSION TEXT/SPACE\* CLAMP
 
-# CURSOR \*
+##### CURSOR \*
 
-# COLORS \*
+##### COLORS \*
 
-# TRANSITION \*
+##### TRANSITION \*
 
-# TEXT \*
+##### TEXT CLAMP \*
 
-# OPT IMAGES
+##### OPTOM IMAGES
