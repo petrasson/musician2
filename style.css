@@ -202,8 +202,6 @@ nav {
   display: block;
   list-style-type: none;
   padding: 0;
-  margin: 0 !important;
-  padding-left: var(--space-lg);
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -231,6 +229,11 @@ nav {
 .show-submenu .hamburger-menu-sub {
   max-height: 500px;
   opacity: 1;
+}
+
+.menu-item .hamburger-menu-sub {
+  margin: 0;
+  padding: 0;
 }
 
 /*** Hamburger buttons ***/
@@ -376,12 +379,13 @@ nav {
 
 /*** Icons ***/
 
-.fa-xmark,
+/* .fa-xmark,
 .fa-bag-shopping,
 .fa-instagram,
 .fa-facebook {
   display: none;
-}
+  border: solid 1px red;
+} */
 
 .fa-magnifying-glass {
   cursor: pointer;
@@ -699,7 +703,6 @@ iframe {
   width: auto;
   border: solid var(--color-secondary-text) 0.5px;
   padding: var(--space-btn);
-  margin: 0 0 var(--space-lgg) !important;
   text-decoration: none;
   color: var(--color-link);
   text-transform: uppercase;
@@ -778,6 +781,15 @@ button.btn,
   min-height: 250px;
 }
 
+.mobile-visible {
+  display: flex;
+}
+
+.social-wrapper .desktop-visible,
+.menu-wrapper .desktop-visible {
+  display: none;
+}
+
 /******************************** TABLET ********************************/
 
 @media only screen and (width >= 700px) {
@@ -833,10 +845,14 @@ button.btn,
   /* .music-container img {
   } */
 
-  .fa-twitter,
+  /* .fa-twitter,
   .fa-instagram,
   .fa-facebook,
   .fa-bag-shopping {
+    display: flex;
+  } */
+
+  .social-wrapper .desktop-visible {
     display: flex;
   }
 
